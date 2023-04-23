@@ -25,7 +25,7 @@ char* get_str() {
     char symb;
     char* string = (char*) calloc(0, sizeof(char));           
         for (unsigned int j = 0; (symb = getchar()) != '\n'; ++j) {
-            string = (char*) realloc(string, (j + 1) * sizeof(char));
+            string = (char*) realloc(string, (j + 2) * sizeof(char));
             string[j] = symb;
             string[j + 1] = '\0';
         }
